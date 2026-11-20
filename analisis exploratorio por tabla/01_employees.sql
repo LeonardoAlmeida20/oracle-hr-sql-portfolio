@@ -1,3 +1,4 @@
+--Consulta para conocer la tabla
 SELECT column_name, 
 data_type, 
 data_length, 
@@ -23,7 +24,7 @@ SELECT
     COUNT(*) - COUNT(E.COMMISSION_PCT) AS sin_comision
 FROM HR.EMPLOYEES E;
 
---Consulta depurada--
+--Consulta depurada para trabajar--
 SELECT 
 E.EMPLOYEE_ID,
 UPPER(TRIM(E.FIRST_NAME)) || ' ' || UPPER(TRIM(E.LAST_NAME)) AS NOMBRE_COMPLETO,
